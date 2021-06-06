@@ -1,0 +1,28 @@
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\bin\Debug\netstandard2.0\Expense Tracker.deps.json
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\bin\Debug\netstandard2.0\Expense Tracker.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\bin\Debug\netstandard2.0\ref\Expense Tracker.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\bin\Debug\netstandard2.0\Expense Tracker.pdb
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\netstandard2.0\App.xaml.g.cs
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\netstandard2.0\Expense Tracker.AssemblyInfoInputs.cache
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\netstandard2.0\Expense Tracker.AssemblyInfo.cs
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\netstandard2.0\Expense Tracker.csproj.CoreCompileInputs.cache
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\netstandard2.0\XamlC.stamp
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\netstandard2.0\Expense Tracker.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\netstandard2.0\ref\Expense Tracker.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\netstandard2.0\Expense Tracker.pdb
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\netstandard2.0\Views\SummaryPage.xaml.g.cs
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\netstandard2.0\Views\ActivityLog.xaml.g.cs
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\bin\Debug\netstandard2.0\Xamarin.Android.Arch.Lifecycle.ViewModel.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\netstandard2.0\Expense Tracker.csproj.CopyComplete
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\netstandard2.0\Views\NewExpensePage.xaml.g.cs
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\netstandard2.0\Expense Tracker.csprojAssemblyReference.cache
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\bin\Debug\netstandard2.0\Mono.Android.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\bin\Debug\netstandard2.0\Mono.Android.pdb
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\bin\Debug\netstandard2.0\Mono.Android.xml
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\bin\Debug\netstandard2.0\PresentationCore.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\bin\Debug\netstandard2.0\WindowsBase.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\bin\Debug\netstandard2.0\UIAutomationProvider.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\bin\Debug\netstandard2.0\UIAutomationTypes.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\netstandard2.0\Views\FriendsExpense.xaml.g.cs
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\netstandard2.0\Views\GroupsExpense.xaml.g.cs

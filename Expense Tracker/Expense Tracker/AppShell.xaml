@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:Expense_Tracker.Views"
+       Title="Expense_Tracker"
+       x:Class="Expense_Tracker.AppShell"
+       xmlns:fontAwesome="clr-namespace:FontAwesome">
+
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Style x:Key="BaseStyle" TargetType="Element">
+                <Setter Property="Shell.BackgroundColor" Value="#574C4E" />
+                <Setter Property="Shell.ForegroundColor" Value="White" />
+                <Setter Property="Shell.TitleColor" Value="White" />
+                <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
+                <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="#574C4E" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="White"/>
+                <Setter Property="Shell.TabBarUnselectedColor" Value="#95FFFFFF"/>
+                <Setter Property="Shell.TabBarTitleColor" Value="White"/>
+            </Style>
+            <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
+            <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
+        </ResourceDictionary>
+    </Shell.Resources>
+
+    <TabBar>
+        <ShellContent Title="Home" Route="SummaryPage" ContentTemplate="{DataTemplate local:SummaryPage}">
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="FAS"
+                                 Glyph="{x:Static fontAwesome:FontAwesomeIcons.Home}"/>
+            </ShellContent.Icon>
+        </ShellContent>
+        <ShellContent Title="Friends" Route="FriendsExpense" ContentTemplate="{DataTemplate local:FriendsExpense}">
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="FAS"
+                                 Glyph="{x:Static fontAwesome:FontAwesomeIcons.User}"/>
+            </ShellContent.Icon>
+        </ShellContent>
+        <ShellContent Title="Groups" Route="GroupsExpense" ContentTemplate="{DataTemplate local:GroupsExpense}">
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="FAS"
+                                 Glyph="{x:Static fontAwesome:FontAwesomeIcons.Users}"/>
+            </ShellContent.Icon>
+        </ShellContent>
+
+        <ShellContent Title="Activity" Route="ActivityLog" ContentTemplate="{DataTemplate local:ActivityLog}">
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="FAS"
+                                 Glyph="{x:Static fontAwesome:FontAwesomeIcons.Book}"/>
+            </ShellContent.Icon>
+        </ShellContent>
+    </TabBar>
+
+    <!--
+        If you would like to navigate to this content you can do so by calling
+        await Shell.Current.GoToAsync("//LoginPage");
+    -->
+    <TabBar>
+    </TabBar>
+
+
+</Shell>

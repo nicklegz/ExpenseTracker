@@ -1,0 +1,67 @@
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\Expense Tracker.iOS.exe
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\Expense Tracker.iOS.pdb
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\OxyPlot.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\OxyPlot.pdb
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\OxyPlot.Xamarin.Forms.Platform.iOS.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\OxyPlot.Xamarin.Forms.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\OxyPlot.Xamarin.Forms.pdb
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\OxyPlot.Xamarin.iOS.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\Xamarin.Essentials.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\Xamarin.Essentials.pdb
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.pdb
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.pdb
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\Xamarin.Forms.Xaml.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\Xamarin.Forms.Xaml.pdb
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\ar\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\ca\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\cs\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\da\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\de\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\el\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\es\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\fi\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\fr\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\he\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\hi\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\hr\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\hu\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\id\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\it\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\ja\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\ko\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\ms\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\nb\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\nl\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\pl\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\pt-BR\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\pt\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\ro\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\ru\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\sk\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\sv\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\th\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\tr\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\uk\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\vi\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\zh-HK\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\zh-Hans\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\zh-Hant\Xamarin.Forms.Platform.iOS.resources.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\Expense Tracker.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\Expense Tracker.pdb
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\obj\iPhone\Debug\coremlc\_PartialAppManifest.items
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\obj\iPhone\Debug\coremlc\_BundleResourceWithLogicalName.items
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\obj\iPhone\Debug\optimized\
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\obj\iPhone\Debug\Expense Tracker.iOS.csprojAssemblyReference.cache
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\obj\iPhone\Debug\Expense Tracker.iOS.csproj.CoreCompileInputs.cache
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\obj\iPhone\Debug\Expense Tracker.iOS.csproj.CopyComplete
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\obj\iPhone\Debug\Expense Tracker.iOS.exe
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\obj\iPhone\Debug\Expense Tracker.iOS.pdb
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\Xamarin.Forms.Material.dll
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\Xamarin.Forms.Material.pdb
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.iOS\bin\iPhone\Debug\MaterialComponents.dll

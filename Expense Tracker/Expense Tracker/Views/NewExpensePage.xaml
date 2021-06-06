@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Expense_Tracker.ViewModels"
+             xmlns:fontAwesome="clr-namespace:FontAwesome"
+             Title="{Binding Title}"
+             x:Class="Expense_Tracker.Views.NewExpensePage"
+             Visual="Material">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Command="{Binding SaveCommand}"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <RefreshView x:DataType="local:NewExpenseViewModel" Command="{Binding LoadCategoriesCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Text="Add new friend" 
+                        BackgroundColor="#BA4948"
+                        Padding="2"
+                        TextColor="#ffffff"
+                        FontSize="11"
+                        FontFamily="FAR"
+                        VerticalOptions="End"
+                        HorizontalOptions="Start"
+                        Grid.Row="1"
+                        Grid.Column="2"
+                        Grid.ColumnSpan="3"/>
+                <Button Text="Create new group" 
+                        BackgroundColor="#BA4948"
+                        Padding="2"
+                        TextColor="#ffffff"
+                        FontSize="11"
+                        FontFamily="FAR"
+                        VerticalOptions="End"
+                        HorizontalOptions="Start"
+                        Grid.Row="1"
+                        Grid.Column="5"
+                        Grid.ColumnSpan="3"/>
+                
+            <StackLayout Grid.Row="2" 
+                         Grid.RowSpan="4"
+                         Grid.Column="2" 
+                         Grid.ColumnSpan="6">
+                <Editor 
+                    Placeholder="Enter a description"
+                    BackgroundColor="#ffffff"
+                    Text="{Binding Description, Mode=TwoWay}"/>
+                <Picker Title="Choose a category"
+                    BackgroundColor="#ffffff"
+                    ItemsSource="{Binding Categories}"
+                    SelectedItem ="{Binding Category, Mode=TwoWay}"/>
+                <Editor 
+                    Placeholder="Enter an amount"
+                    BackgroundColor="#ffffff"
+                    Keyboard="Numeric"
+                    Text="{Binding TextAmount, Mode=TwoWay}"/>
+                </StackLayout>
+
+                <SearchBar 
+                    Grid.Row="4"
+                    VerticalOptions="End"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="8"
+                    Margin="0, 10, 40 ,0"
+                    Placeholder="Split this expense with" 
+                    FontSize="Medium"
+                    FontFamily="FAR"/>
+            </Grid>
+        </RefreshView>
+    </ContentPage.Content>
+</ContentPage>

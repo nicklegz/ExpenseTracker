@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "j9T9kEbVk05OXj10scu+jlPA3AWdA3sozA1YnB7XqX64+a5LeArYmzo76UAYTsVoRkKyoUSIqMFgZG+yDm3Jqg==",
+  "success": true,
+  "projectFilePath": "S:\\Programming\\Projects\\Expense Tracker\\Expense Tracker\\Expense Tracker\\Expense Tracker.iOS\\Expense Tracker.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\L3GZ\\.nuget\\packages\\oxyplot.core\\1.0.0\\oxyplot.core.1.0.0.nupkg.sha512",
+    "C:\\Users\\L3GZ\\.nuget\\packages\\oxyplot.xamarin.forms\\1.0.0\\oxyplot.xamarin.forms.1.0.0.nupkg.sha512",
+    "C:\\Users\\L3GZ\\.nuget\\packages\\oxyplot.xamarin.ios\\1.0.0\\oxyplot.xamarin.ios.1.0.0.nupkg.sha512",
+    "C:\\Users\\L3GZ\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\L3GZ\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Users\\L3GZ\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",
+    "C:\\Users\\L3GZ\\.nuget\\packages\\xamarin.forms.visual.material\\5.0.0.2012\\xamarin.forms.visual.material.5.0.0.2012.nupkg.sha512",
+    "C:\\Users\\L3GZ\\.nuget\\packages\\xamarin.ios.materialcomponents\\92.0.0\\xamarin.ios.materialcomponents.92.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
