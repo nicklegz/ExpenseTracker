@@ -14,32 +14,45 @@
                         <DataTemplate>
                             <StackLayout
                                 x:DataType="model:Expense">
-                                <Grid Margin="20,0,5,10">
+                                <Grid Padding="5"
+                                      Margin="2, -10, 0, 10">
                                     <Label Grid.Row="1"
                                            Grid.Column="1"
                                            FontSize="18"
                                            HorizontalOptions="Center"
                                            TextColor="#574C4E"
+                                           FontFamily="FAR"
                                            Text="Date:"/>
                                     <Label Grid.Row="2"
                                            Grid.Column="1"
-                                           FontSize="15"
+                                           FontSize="16"
+                                           FontFamily="FAR"
                                            HorizontalOptions="Center"
                                            FontAttributes="Bold"
+                                           TextColor="#574C4E"
                                            Text="{Binding Date, StringFormat='{0:MM/dd/yyyy}'}"/>
                                     <Label Grid.Row="1"
-                                           FontSize="18"
+                                           FontSize="16"
+                                           FontFamily="FAR"
                                            TextColor="#574C4E"
                                            Text="{Binding Description}" />
                                     <Label Grid.Row="2"
                                            FontSize="18"
-                                           TextColor= "#CB9190"
+                                           FontFamily="FAR"
+                                           TextColor= "#BA4948"
                                            Text="{Binding Amount, StringFormat='${0}'}"
                                            FontAttributes="Bold" />
                                     <Label Grid.Row="3"
-                                           FontSize="18"
-                                           Text="{Binding Category}"
-                                           VerticalOptions="End" />
+                                           FontSize="16"
+                                           FontFamily="FAR"
+                                           TextColor="#6D7973">
+                                        <Label.Text>
+                                            <MultiBinding StringFormat="{}Split {0:0}% with {1}">
+                                                <Binding Path="ExpenseSplitPercentage"/>
+                                                <Binding Path="SplitWith"/>
+                                            </MultiBinding>
+                                        </Label.Text>
+                                    </Label>
                                 </Grid>
                                 <BoxView HeightRequest="1" Color="#000000"/>
                             </StackLayout>

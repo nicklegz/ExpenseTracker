@@ -13,5 +13,7 @@ namespace Expense_Tracker.Services
         Task<FriendExpense> GetFriendExpenseAsync(string id);
         Task<IEnumerable<FriendExpense>> GetFriendExpensesAsync(bool forceRefresh = false);
         Task<IEnumerable<string>> GetCategoriesAsync(bool forceRefresh = false);
+        Task<IEnumerable<User>> GetFriendsAsync(bool forceRefresh = false);
+        Task<User> GetFriendAsync(string id);
     }
 }

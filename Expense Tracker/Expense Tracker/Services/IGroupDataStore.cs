@@ -13,5 +13,7 @@ namespace Expense_Tracker.Services
         Task<GroupExpense> GetGroupExpenseAsync(string id);
         Task<IEnumerable<GroupExpense>> GetGroupExpensesAsync(bool forceRefresh = false);
         Task<IEnumerable<string>> GetCategoriesAsync(bool forceRefresh = false);
+        Task<IEnumerable<Group>> GetGroupsAsync(bool forceRefresh = false);
+        Task<Group> GetGroupAsync(string id);
     }
 }

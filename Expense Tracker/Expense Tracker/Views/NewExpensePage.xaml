@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Expense_Tracker.ViewModels"
+             xmlns:models="clr-namespace:Expense_Tracker.Models"
              xmlns:fontAwesome="clr-namespace:FontAwesome"
              Title="{Binding Title}"
              x:Class="Expense_Tracker.Views.NewExpensePage"
@@ -74,17 +75,23 @@
                     BackgroundColor="#ffffff"
                     Keyboard="Numeric"
                     Text="{Binding TextAmount, Mode=TwoWay}"/>
-                </StackLayout>
-
-                <SearchBar 
+                    <SearchBar
                     Grid.Row="4"
                     VerticalOptions="End"
                     Grid.Column="1"
                     Grid.ColumnSpan="8"
-                    Margin="0, 10, 40 ,0"
-                    Placeholder="Split this expense with" 
+                    Margin="0, 10, 10 ,10"
+                    Placeholder="Split expense with"
                     FontSize="Medium"
-                    FontFamily="FAR"/>
+                    FontFamily="FAR"
+                    SearchCommand="{Binding SearchCommand}"
+                    Text="{Binding SearchText}">
+                        <SearchBar.Behaviors>
+                            <models:TextChangedBehavior />
+                        </SearchBar.Behaviors>
+                    </SearchBar>
+                    <ListView ItemsSource="{Binding SearchResults}"/>
+                </StackLayout>
             </Grid>
         </RefreshView>
     </ContentPage.Content>

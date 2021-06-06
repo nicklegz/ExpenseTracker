@@ -24,5 +24,7 @@ S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense 
 S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\bin\Debug\netstandard2.0\WindowsBase.dll
 S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\bin\Debug\netstandard2.0\UIAutomationProvider.dll
 S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\bin\Debug\netstandard2.0\UIAutomationTypes.dll
-S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\netstandard2.0\Views\FriendsExpense.xaml.g.cs
-S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\netstandard2.0\Views\GroupsExpense.xaml.g.cs
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\netstandard2.0\Views\Friends.xaml.g.cs
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\netstandard2.0\Views\Groups.xaml.g.cs
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\netstandard2.0\Views\AddFriendPage.xaml.g.cs
+S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker\obj\Debug\netstandard2.0\Views\AddGroupPage.xaml.g.cs

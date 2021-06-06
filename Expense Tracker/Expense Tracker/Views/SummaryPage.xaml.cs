@@ -7,12 +7,12 @@ namespace Expense_Tracker.Views
 {
     public partial class SummaryPage : ContentPage
     {
-        ExpensesViewModel _viewModel;
+        SummaryViewModel _viewModel;
 
         public SummaryPage()
         {
             InitializeComponent();
-            BindingContext = _viewModel = new ExpensesViewModel("Summary");
+            BindingContext = _viewModel = new SummaryViewModel("Summary");
         }
 
         protected override void OnAppearing()

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Expense_Tracker.Views.Groups">
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout>
+                <Button Text="Create new group" 
+                            BackgroundColor="#BA4948"
+                            Padding="2"
+                            TextColor="#ffffff"
+                            FontSize="11"
+                            FontFamily="FAR"
+                            VerticalOptions="End"
+                            HorizontalOptions="Start"
+                            Grid.Row="1"
+                            Grid.Column="5"
+                            Grid.ColumnSpan="3"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

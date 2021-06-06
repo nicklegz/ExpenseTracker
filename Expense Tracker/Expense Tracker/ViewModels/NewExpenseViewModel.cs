@@ -1,5 +1,6 @@
 ﻿using Expense_Tracker.Models;
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Threading.Tasks;
@@ -11,20 +12,66 @@ namespace Expense_Tracker.ViewModels
     {
         private string textAmount;
         public ObservableCollection<string> Categories { get; }
+        public ObservableCollection<string> SearchResults { get; }
         public enum ExpenseTypes { Personal, Friend, Group }
         public ObservableCollection<ExpenseTypes> Types { get; }
         public Command LoadCategoriesCommand { get; }
+        private string _searchText;
         private string _expenseType;
-
         public NewExpenseViewModel(string title)
         {
             Title = title;
+            SearchResults = new ObservableCollection<string>();
             Types = new ObservableCollection<ExpenseTypes>();
             Categories = new ObservableCollection<string>();
             LoadCategoriesCommand = new Command(async () => await ExecuteLoadCategoriesCommand());
             SaveCommand = new Command(OnSave, ValidateSave);
+            SearchText = _searchText;
             this.PropertyChanged +=
                 (_, __) => SaveCommand.ChangeCanExecute();
+        }
+
+        Command _searchCommand;
+        public Command SearchCommand
+        {
+            get
+            {
+                return _searchCommand ?? (_searchCommand = new Command(async () => await ExecuteSearchCommand()));
+            }
+        }
+
+        public string SearchText
+        {
+            get => _searchText;
+            set => SetProperty(ref _searchText, value);
+        }
+
+        private async Task ExecuteSearchCommand()
+        {
+            SearchResults.Clear();
+
+            if(String.IsNullOrEmpty(SearchText))
+            {
+                return;
+            }
+
+            var groups = await GroupDataStore.GetGroupsAsync();
+            foreach(var group in groups)
+            {
+                if(group.Name.StartsWith(SearchText))
+                {
+                    SearchResults.Add(group.Name);
+                }
+            }
+
+            var friends = await FriendDataStore.GetFriendsAsync();
+            foreach(var friend in friends)
+            {
+                if(friend.FirstName.StartsWith(SearchText))
+                {
+                    SearchResults.Add(friend.FirstName);
+                }
+            }
         }
      
         public string ExpenseType
@@ -123,7 +170,8 @@ namespace Expense_Tracker.ViewModels
                     await Shell.Current.GoToAsync("..");
                     break;
                 }
-        }
+            }
+
         }
     }
 }

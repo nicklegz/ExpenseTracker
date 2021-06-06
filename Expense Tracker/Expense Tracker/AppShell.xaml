@@ -31,13 +31,13 @@
                                  Glyph="{x:Static fontAwesome:FontAwesomeIcons.Home}"/>
             </ShellContent.Icon>
         </ShellContent>
-        <ShellContent Title="Friends" Route="FriendsExpense" ContentTemplate="{DataTemplate local:FriendsExpense}">
+        <ShellContent Title="Friends" Route="Friends" ContentTemplate="{DataTemplate local:Friends}">
             <ShellContent.Icon>
                 <FontImageSource FontFamily="FAS"
                                  Glyph="{x:Static fontAwesome:FontAwesomeIcons.User}"/>
             </ShellContent.Icon>
         </ShellContent>
-        <ShellContent Title="Groups" Route="GroupsExpense" ContentTemplate="{DataTemplate local:GroupsExpense}">
+        <ShellContent Title="Groups" Route="Groups" ContentTemplate="{DataTemplate local:Groups}">
             <ShellContent.Icon>
                 <FontImageSource FontFamily="FAS"
                                  Glyph="{x:Static fontAwesome:FontAwesomeIcons.Users}"/>

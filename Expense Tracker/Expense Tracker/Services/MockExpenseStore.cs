@@ -11,27 +11,127 @@ namespace Expense_Tracker.Services
     {
         readonly List<FriendExpense> friendExpenses;
         readonly List<GroupExpense> groupExpenses;
+        readonly List<Group> groups;
+        readonly List<User> friends;
         readonly List<string> categories;
+        readonly User nick = new User() { Id = "7a4c26c4-8de9-4a6f-8171-7de5d9c52193", FirstName = "Nick", LastName = "Legz" };
+        readonly User amanda = new User() { Id = "06371d48-b34b-4bab-bddd-ea7ea7460159", FirstName = "Amanda", LastName = "Lavallee" };
+        readonly GroupExpense gExp2 = new GroupExpense()
+        {
+            Id = Guid.NewGuid().ToString(),
+            UserId = "7a4c26c4-8de9-4a6f-8171-7de5d9c52193",
+            GroupId = "4b0d5cf0-2ecf-431a-bfca-8e4e7ca861f4",
+            Description = "Pizza",
+            Category = "Food",
+            Amount = 60.90m,
+            Date = DateTime.Now.AddHours(-10),
+            ExpenseSplitPercentage = 0.5m
+        };
+
+        readonly GroupExpense gExp1 = new GroupExpense()
+        {
+            Id = Guid.NewGuid().ToString(),
+            UserId = "7a4c26c4-8de9-4a6f-8171-7de5d9c52193",
+            GroupId = "4b0d5cf0-2ecf-431a-bfca-8e4e7ca861f4",
+            Description = "Coffee",
+            Category = "Food",
+            Amount = 88.88m,
+            Date = DateTime.Now.AddHours(-24),
+            ExpenseSplitPercentage = 0.5m
+        };
 
         public MockExpenseStore()
         {
+
             friendExpenses = new List<FriendExpense>()
             {
-                new FriendExpense{Id = Guid.NewGuid().ToString(), User = "Nick", Description = "Internet", Category = "Utility", Amount = 88.88m, Date = DateTime.Now.AddHours(-24)},
-                new FriendExpense{Id = Guid.NewGuid().ToString(), User = "Nick", Description = "Hydro", Category = "Utility", Amount = 60.90m, Date = DateTime.Now.AddHours(-10)},
-                new FriendExpense{Id = Guid.NewGuid().ToString(), User = "Amanda", Description = "Enbridge", Category = "Utility", Amount = 20.88m , Date = DateTime.Now.AddHours(-110)},
-                new FriendExpense{Id = Guid.NewGuid().ToString(), User = "Amanda", Description = "Farm Boy", Category = "Food", Amount = 188.88m, Date = DateTime.Now.AddHours(-210)},
-            }; 
-            
+                new FriendExpense
+                {
+                    Id = Guid.NewGuid().ToString(), 
+                    UserId = "7a4c26c4-8de9-4a6f-8171-7de5d9c52193", 
+                    FriendId = "06371d48-b34b-4bab-bddd-ea7ea7460159",
+                    Description = "Internet", 
+                    Category = "Utility", 
+                    Amount = 88.88m, 
+                    Date = DateTime.Now.AddHours(-24),
+                    ExpenseSplitPercentage = 0.5m
+                },
+                new FriendExpense
+                {
+                    Id = Guid.NewGuid().ToString(), 
+                    UserId = "7a4c26c4-8de9-4a6f-8171-7de5d9c52193", 
+                    FriendId = "06371d48-b34b-4bab-bddd-ea7ea7460159",
+                    Description = "Hydro", 
+                    Category = "Utility", 
+                    Amount = 60.90m, 
+                    Date = DateTime.Now.AddHours(-10),
+                    ExpenseSplitPercentage = 0.5m
+                },
+                new FriendExpense
+                {
+                    Id = Guid.NewGuid().ToString(), 
+                    UserId = "06371d48-b34b-4bab-bddd-ea7ea7460159",
+                    FriendId = "7a4c26c4-8de9-4a6f-8171-7de5d9c52193",
+                    Description = "Enbridge", 
+                    Category = "Utility", 
+                    Amount = 20.88m ,                     
+                    Date = DateTime.Now.AddHours(-110),
+                    ExpenseSplitPercentage = 0.5m
+                },
+                new FriendExpense
+                {
+                    Id = Guid.NewGuid().ToString(),
+                    UserId = "06371d48-b34b-4bab-bddd-ea7ea7460159",
+                    FriendId = "7a4c26c4-8de9-4a6f-8171-7de5d9c52193",
+                    Description = "Farm Boy",
+                    Category = "Food",
+                    Amount = 188.88m,
+                    Date = DateTime.Now.AddHours(-210),
+                    ExpenseSplitPercentage = 0.5m
+                }
+            };
+
             groupExpenses = new List<GroupExpense>()
             {
-                new GroupExpense{Id = Guid.NewGuid().ToString(), User = "Nick", Description = "Internet", Category = "Utility", Amount = 88.88m, Date = DateTime.Now.AddHours(-24)},
-                new GroupExpense{Id = Guid.NewGuid().ToString(), User = "Nick", Description = "Hydro", Category = "Utility", Amount = 60.90m, Date = DateTime.Now.AddHours(-10)},
-                new GroupExpense{Id = Guid.NewGuid().ToString(), User = "Amanda", Description = "Enbridge", Category = "Utility", Amount = 20.88m , Date = DateTime.Now.AddHours(-110)},
-                new GroupExpense{Id = Guid.NewGuid().ToString(), User = "Amanda", Description = "Farm Boy", Category = "Food", Amount = 188.88m, Date = DateTime.Now.AddHours(-210)},
+                gExp1,
+                gExp2,
+                new GroupExpense
+                {
+                    Id = Guid.NewGuid().ToString(), 
+                    UserId = "Amanda",
+                    GroupId = "4b0d5cf0-2ecf-431a-bfca-8e4e7ca861f4",
+                    Description = "Alcatraz", 
+                    Category = "Entertainment", 
+                    Amount = 20.88m , 
+                    Date = DateTime.Now.AddHours(-110),
+                    ExpenseSplitPercentage = 0.5m
+                },
+                new GroupExpense
+                {
+                    Id = Guid.NewGuid().ToString(), 
+                    UserId = "Amanda",
+                    GroupId = "4b0d5cf0-2ecf-431a-bfca-8e4e7ca861f4",
+                    Description = "Coffee", 
+                    Category = "Food", 
+                    Amount = 188.88m, 
+                    Date = DateTime.Now.AddHours(-210),
+                    ExpenseSplitPercentage = 0.5m
+                },
             };
 
             categories = new List<string>() { "Utility", "Entertainment", "Gas", "Food" };
+
+            groups = new List<Group>()
+            {
+                new Group { Id = "4b0d5cf0-2ecf-431a-bfca-8e4e7ca861f4", Expenses = new List<GroupExpense>() { gExp1, gExp2 }, Name = "San Fran", Users = new List<User>() { nick, amanda } }
+            };
+
+            friends = new List<User>()
+            {
+                nick,
+                amanda
+            };
+
         }
 
         public async Task<bool> AddFriendExpenseAsync(FriendExpense expense)
@@ -106,5 +206,26 @@ namespace Expense_Tracker.Services
         {
             return await Task.FromResult(categories);
         }
+
+        public async Task<IEnumerable<Group>> GetGroupsAsync(bool forceRefresh = false)
+        {
+            return await Task.FromResult(groups);
+        }
+
+        public async Task<Group> GetGroupAsync(string id)
+        {
+            return await Task.FromResult(groups.FirstOrDefault(s => s.Id == id));
+        }
+
+        public async Task<IEnumerable<User>> GetFriendsAsync(bool forceRefresh = false)
+        {
+            return await Task.FromResult(friends);
+        }
+
+        public async Task<User> GetFriendAsync(string id)
+        {
+            return await Task.FromResult(friends.FirstOrDefault(s => s.Id == id));
+        }
+
     }
 }
