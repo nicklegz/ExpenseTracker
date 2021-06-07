@@ -12,16 +12,19 @@ namespace Expense_Tracker.ViewModels
     {
         private string textAmount;
         public ObservableCollection<string> Categories { get; }
-        public ObservableCollection<string> SearchResults { get; }
+        public ObservableCollection<SearchResult> SearchResults { get; }
         public enum ExpenseTypes { Personal, Friend, Group }
         public ObservableCollection<ExpenseTypes> Types { get; }
         public Command LoadCategoriesCommand { get; }
         private string _searchText;
         private string _expenseType;
+        private string _result;
+        private bool _isVisible;
         public NewExpenseViewModel(string title)
         {
             Title = title;
-            SearchResults = new ObservableCollection<string>();
+            IsVisible = false;
+            SearchResults = new ObservableCollection<SearchResult>();
             Types = new ObservableCollection<ExpenseTypes>();
             Categories = new ObservableCollection<string>();
             LoadCategoriesCommand = new Command(async () => await ExecuteLoadCategoriesCommand());
@@ -32,6 +35,19 @@ namespace Expense_Tracker.ViewModels
         }
 
         Command _searchCommand;
+
+        public bool IsVisible
+        {
+            get => _isVisible;
+            set => SetProperty(ref _isVisible, value);
+        }
+
+        public string Result
+        {
+            get => _result;
+            set => SetProperty(ref _result, value);
+        }
+
         public Command SearchCommand
         {
             get
@@ -50,8 +66,9 @@ namespace Expense_Tracker.ViewModels
         {
             SearchResults.Clear();
 
-            if(String.IsNullOrEmpty(SearchText))
+            if (String.IsNullOrEmpty(SearchText))
             {
+                IsVisible = false;
                 return;
             }
 
@@ -60,7 +77,8 @@ namespace Expense_Tracker.ViewModels
             {
                 if(group.Name.StartsWith(SearchText))
                 {
-                    SearchResults.Add(group.Name);
+                    IsVisible = true;
+                    SearchResults.Add(new SearchResult() { Result = group.Name });
                 }
             }
 
@@ -69,11 +87,14 @@ namespace Expense_Tracker.ViewModels
             {
                 if(friend.FirstName.StartsWith(SearchText))
                 {
-                    SearchResults.Add(friend.FirstName);
+                    IsVisible = true;
+                    SearchResults.Add(new SearchResult() { Result = friend.FirstName });
                 }
             }
         }
-     
+
+        
+
         public string ExpenseType
         {
             get => _expenseType;

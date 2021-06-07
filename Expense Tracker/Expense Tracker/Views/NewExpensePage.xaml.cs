@@ -21,5 +21,6 @@ namespace Expense_Tracker.Views
             base.OnAppearing();
             _viewModel.OnAppearing();
         }
+
     }
 }

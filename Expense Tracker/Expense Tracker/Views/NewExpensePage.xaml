@@ -35,6 +35,21 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
+                <SearchBar
+                    Grid.Row="0"
+                    VerticalOptions="End"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="7"
+                    Margin="0, 10, 10 ,10"
+                    Placeholder="Split expense with"
+                    FontSize="Medium"
+                    FontFamily="FAR"
+                    SearchCommand="{Binding SearchCommand}"
+                    Text="{Binding SearchText}">
+                    <SearchBar.Behaviors>
+                        <models:TextChangedBehavior />
+                    </SearchBar.Behaviors>
+                </SearchBar>
                 <Button Text="Add new friend" 
                         BackgroundColor="#BA4948"
                         Padding="2"
@@ -58,40 +73,47 @@
                         Grid.Column="5"
                         Grid.ColumnSpan="3"/>
                 
-            <StackLayout Grid.Row="2" 
-                         Grid.RowSpan="4"
-                         Grid.Column="2" 
-                         Grid.ColumnSpan="6">
-                <Editor 
+                <Editor
+                    Grid.Row="2"
+                    Grid.Column="2"
+                    Grid.ColumnSpan="6"
                     Placeholder="Enter a description"
                     BackgroundColor="#ffffff"
                     Text="{Binding Description, Mode=TwoWay}"/>
-                <Picker Title="Choose a category"
+                <Picker 
+                    Grid.Row="3"
+                    Grid.Column="2"
+                    Grid.ColumnSpan="6"
+                    Title="Choose a category"
                     BackgroundColor="#ffffff"
                     ItemsSource="{Binding Categories}"
                     SelectedItem ="{Binding Category, Mode=TwoWay}"/>
-                <Editor 
+                <Editor
+                    Grid.Row="4"
+                    Grid.Column="2"
+                    Grid.ColumnSpan="6"
                     Placeholder="Enter an amount"
                     BackgroundColor="#ffffff"
                     Keyboard="Numeric"
                     Text="{Binding TextAmount, Mode=TwoWay}"/>
-                    <SearchBar
-                    Grid.Row="4"
-                    VerticalOptions="End"
-                    Grid.Column="1"
-                    Grid.ColumnSpan="8"
-                    Margin="0, 10, 10 ,10"
-                    Placeholder="Split expense with"
-                    FontSize="Medium"
-                    FontFamily="FAR"
-                    SearchCommand="{Binding SearchCommand}"
-                    Text="{Binding SearchText}">
-                        <SearchBar.Behaviors>
-                            <models:TextChangedBehavior />
-                        </SearchBar.Behaviors>
-                    </SearchBar>
-                    <ListView ItemsSource="{Binding SearchResults}"/>
-                </StackLayout>
+
+                <CollectionView ItemsSource="{Binding SearchResults}"
+                                IsVisible="{Binding IsVisible}"
+                                BackgroundColor="#ffffff"
+                                HorizontalScrollBarVisibility="Always"
+                                Grid.Row="1"
+                                Grid.RowSpan="2"
+                                Grid.Column="2"
+                                Grid.ColumnSpan="6">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout>
+                                <Label TextColor="#BA4948"
+                                           Text="{Binding Result}"/>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
             </Grid>
         </RefreshView>
     </ContentPage.Content>

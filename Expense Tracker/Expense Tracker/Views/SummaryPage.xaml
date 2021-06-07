@@ -7,8 +7,7 @@
              x:Name="SummaryOfExpensesPage"
              Title="Expense Track"
              Visual="Material"
-             xmlns:fontAwesome="clr-namespace:FontAwesome"
-             BackgroundImageSource="theme1.jpg">
+             xmlns:fontAwesome="clr-namespace:FontAwesome">
     <ContentPage.ToolbarItems>
         <ToolbarItem>
             <ToolbarItem.IconImageSource>
