@@ -54,7 +54,6 @@
                                         </Label.Text>
                                     </Label>
                                 </Grid>
-                                <BoxView HeightRequest="1" Color="#000000"/>
                             </StackLayout>
                         </DataTemplate>
                         </CollectionView.ItemTemplate>

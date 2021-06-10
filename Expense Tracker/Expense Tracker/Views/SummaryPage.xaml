@@ -81,7 +81,8 @@
                           Grid.Row="4"
                           Grid.RowSpan="4"
                           Grid.Column="0"
-                          Grid.ColumnSpan="6"/>
+                          Grid.ColumnSpan="6"
+                          Margin="30, 0, 0, 0"/>
 
             <Button Text="Add expense"
                     Command="{Binding AddItemCommand}"

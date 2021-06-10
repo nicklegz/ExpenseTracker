@@ -1,4 +1,5 @@
 ﻿using Expense_Tracker.Models;
+using Expense_Tracker.Views;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -16,10 +17,16 @@ namespace Expense_Tracker.ViewModels
         public enum ExpenseTypes { Personal, Friend, Group }
         public ObservableCollection<ExpenseTypes> Types { get; }
         public Command LoadCategoriesCommand { get; }
+        public Command SaveCommand { get; }
+        public Command AddFriendCommand { get; }
+        public Command AddGroupCommand { get; }
+
+        private Command _searchCommand;
         private string _searchText;
         private string _expenseType;
         private string _result;
         private bool _isVisible;
+
         public NewExpenseViewModel(string title)
         {
             Title = title;
@@ -30,11 +37,12 @@ namespace Expense_Tracker.ViewModels
             LoadCategoriesCommand = new Command(async () => await ExecuteLoadCategoriesCommand());
             SaveCommand = new Command(OnSave, ValidateSave);
             SearchText = _searchText;
+            AddFriendCommand = new Command(OnAddFriend);
+            AddGroupCommand = new Command(OnAddGroup);
             this.PropertyChanged +=
                 (_, __) => SaveCommand.ChangeCanExecute();
         }
 
-        Command _searchCommand;
 
         public bool IsVisible
         {
@@ -93,7 +101,15 @@ namespace Expense_Tracker.ViewModels
             }
         }
 
-        
+        private async void OnAddFriend(object obj)
+        {
+            await Shell.Current.GoToAsync(nameof(AddFriendPage));
+        }
+
+        private async void OnAddGroup(object obj)
+        {
+            await Shell.Current.GoToAsync(nameof(AddGroupPage));
+        }
 
         public string ExpenseType
         {
@@ -144,7 +160,6 @@ namespace Expense_Tracker.ViewModels
                 && Decimal.TryParse(textAmount, out decAmount);
         }
 
-        public Command SaveCommand { get; }
 
         public async void OnSave()
         {

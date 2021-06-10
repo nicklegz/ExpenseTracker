@@ -97,7 +97,7 @@ namespace Expense_Tracker.ViewModels
             PieModel.InvalidatePlot(true);
             PieModel.Series.Clear();
             PieModel.LegendFontSize = 12;
-            PieModel.PlotMargins = new OxyThickness(5);
+            PieModel.PlotMargins = new OxyThickness(10);
             PieModel.DefaultColors = new List<OxyColor>
             {
                 OxyColor.FromRgb(109, 121, 115),

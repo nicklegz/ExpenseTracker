@@ -38,8 +38,8 @@
                 <SearchBar
                     Grid.Row="0"
                     VerticalOptions="End"
-                    Grid.Column="1"
-                    Grid.ColumnSpan="7"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="9"
                     Margin="0, 10, 10 ,10"
                     Placeholder="Split expense with"
                     FontSize="Medium"
@@ -51,6 +51,7 @@
                     </SearchBar.Behaviors>
                 </SearchBar>
                 <Button Text="Add new friend" 
+                        Command="{Binding AddFriendCommand}"
                         BackgroundColor="#BA4948"
                         Padding="2"
                         TextColor="#ffffff"
@@ -58,10 +59,11 @@
                         FontFamily="FAR"
                         VerticalOptions="End"
                         HorizontalOptions="Start"
-                        Grid.Row="1"
+                        Grid.Row="2"
                         Grid.Column="2"
                         Grid.ColumnSpan="3"/>
                 <Button Text="Create new group" 
+                        Command="{Binding AddGroupCommand}"
                         BackgroundColor="#BA4948"
                         Padding="2"
                         TextColor="#ffffff"
@@ -69,19 +71,19 @@
                         FontFamily="FAR"
                         VerticalOptions="End"
                         HorizontalOptions="Start"
-                        Grid.Row="1"
+                        Grid.Row="2"
                         Grid.Column="5"
                         Grid.ColumnSpan="3"/>
                 
                 <Editor
-                    Grid.Row="2"
+                    Grid.Row="3"
                     Grid.Column="2"
                     Grid.ColumnSpan="6"
                     Placeholder="Enter a description"
                     BackgroundColor="#ffffff"
                     Text="{Binding Description, Mode=TwoWay}"/>
                 <Picker 
-                    Grid.Row="3"
+                    Grid.Row="4"
                     Grid.Column="2"
                     Grid.ColumnSpan="6"
                     Title="Choose a category"
@@ -89,7 +91,7 @@
                     ItemsSource="{Binding Categories}"
                     SelectedItem ="{Binding Category, Mode=TwoWay}"/>
                 <Editor
-                    Grid.Row="4"
+                    Grid.Row="5"
                     Grid.Column="2"
                     Grid.ColumnSpan="6"
                     Placeholder="Enter an amount"
@@ -102,14 +104,18 @@
                                 BackgroundColor="#ffffff"
                                 HorizontalScrollBarVisibility="Always"
                                 Grid.Row="1"
-                                Grid.RowSpan="2"
-                                Grid.Column="2"
-                                Grid.ColumnSpan="6">
+                                Grid.RowSpan="8"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="10">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
                             <StackLayout>
-                                <Label TextColor="#BA4948"
-                                           Text="{Binding Result}"/>
+                                <Label TextColor="#574C4E"
+                                       Text="{Binding Result}"
+                                       Margin="10"
+                                       FontAttributes="Bold"
+                                       FontSize="15"
+                                       BackgroundColor="#ffffff"/>
                             </StackLayout>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>

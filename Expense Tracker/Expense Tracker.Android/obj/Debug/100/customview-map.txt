@@ -31,6 +31,7 @@ external-path;S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tr
 foreground;obj\Debug\100\res\mipmap-anydpi-v26\icon.xml
 foreground;obj\Debug\100\res\mipmap-anydpi-v26\icon_round.xml
 FrameLayout;S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.Android\obj\Debug\100\lp\48\jl\res\layout\bottomtablayout.xml
+item;obj\Debug\100\res\values\styles.xml
 item;S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.Android\obj\Debug\100\lp\47\jl\res\drawable\materialprogressbar.xml
 item;S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.Android\obj\Debug\100\lp\47\jl\res\values\styles.xml
 item;S:\Programming\Projects\Expense Tracker\Expense Tracker\Expense Tracker\Expense Tracker.Android\obj\Debug\100\lp\47\jl\res\values-v21\styles.xml
